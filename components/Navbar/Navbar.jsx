@@ -14,7 +14,7 @@ const Navbar = () => {
 
 
   return (
-   <div className='flex  xl:max-w-screen transition-all ease-in-out justify-between items-center  static px-4 py-2'>
+   <div className='flex  xl:max-w-[1290px] transition-all ease-in-out justify-between items-center  static px-4 py-2'>
     <Sidebar open={toggle} setOpen={setToggle}  />
     <div onClick={()=>setToggle((prev)=>!prev)} className='flex justify-start border-2 absolute ss:hidden cursor-pointer border-gray-700 rounded-full px-2 py-3'>
       <Image src={menu} className='bg-themeColor   ' />

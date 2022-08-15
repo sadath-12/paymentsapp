@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
 <HomeLayout>
-  <div className=''>
+  <div className='w-full mx-auto'>
 
   <Hero/>
   <PayBy/>
