@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Hero, Navbar, PayBy, Pricing, Services } from '../components'
 import HomeLayout from '../components/Layouts/HomeLayout'
+import PaymentBy from '../components/PayBy'
+import PaymentSection from '../components/PaymentSection'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -17,7 +19,8 @@ export default function Home() {
   <div className='w-full '>
 
   <Hero/>
-  <PayBy/>
+  {/* <PayBy/> */}
+  <PaymentSection/>
   <Services/>
   <Pricing/>
   </div>

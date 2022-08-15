@@ -76,10 +76,10 @@ export const payTakenBy=[
         title:'Paytm',
         Icon:'/img/paytm.jpg'
     },
-    // {
-    //     title:'Phonpe',
-    //     Icon:'/img/phonpe.webp'
-    // },
+    {
+        title:'Upi',
+        Icon:'/img/upi.jpg'
+    },
     {
         title:'Amazon Pay',
         Icon:'/img/amazonpay.jpg'
