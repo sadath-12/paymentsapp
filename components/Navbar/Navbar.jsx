@@ -32,6 +32,7 @@ const Navbar = () => {
     <div  onMouseLeave={()=>setHovered('')} onMouseEnter={()=>setHovered(title)} className='flex cursor-pointer items-center gap-1 font-semibold relative'>
   <p className='hover:text-blue-800'>{title}</p>
   {Icon && <Icon/> }
+  {/* but  */}
   {hoverItem && hoverItem===title && subMenu && (
     <motion.div initial={{x:0,y:100,opacity:0}} animate={{x:0,y:0,opacity:1}} transition={{duration:1}} className='flex border-t-4 backdrop-blur-lg drop-shadow-xl border-t-themeColor z-[1000] absolute top-7 space-x-5  rounded-lg polygon bg-white shadow-lg px-4 py-3'>
       {subMenu.map(({title,subLinks})=>(
