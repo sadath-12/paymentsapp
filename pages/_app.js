@@ -1,7 +1,14 @@
 import '../styles/globals.css'
+import { CacheProvider } from "@emotion/react";
+import createEmotionCache from '../utils/createEmotionCache';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const clientSideEmotionCache = createEmotionCache();
+
+function MyApp({ Component, emotionCache = clientSideEmotionCache, pageProps }) {
+  return <CacheProvider value={emotionCache} >
+
+   <Component {...pageProps} />
+  </CacheProvider>
 }
 
 export default MyApp

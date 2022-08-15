@@ -24,7 +24,7 @@ const features =[
 
 const Hero = () => {
   return (
-    <div className='flex flex-col z-[1] md:px-16 md:flex-row w-full py-5 gap-4 lg:px-16  items-center'>
+    <div className='flex  xl:max-w-[1280px] flex-col z-[1] md:px-16 md:flex-row w-full py-5 gap-4 lg:px-16  items-center'>
 {/* lft  */}
 <div className='flex-1 flex flex-col  items-start space-y-7'>
 

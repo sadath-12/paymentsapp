@@ -43,10 +43,10 @@ const Services = () => {
   
 
   return (
-    <div className="w-full px-16 lg:px-16 py-4  bg-[#F2D7D9] ">
+    <div className="w-full max-w-screen bg-opacity-50 px-16 lg:px-16 py-4  bg-[#646FD4] ">
       <div>
         <h2 className="text-black heading ">Services</h2>
-        <div className="w-[80px] h-[2px] bg-white" />
+        <div className="w-[80px]  h-[2px] bg-white" />
       </div>
 
       <div  className="flex py-4 w-full mt-4 scrollbar-hide overflow-y-hidden overflow-x-scroll space-x-5" {...bind()} >
