@@ -14,7 +14,7 @@ const Navbar = () => {
 
 
   return (
-   <div className='flex drop-shadow-2xl  transition-all ease-in-out justify-between items-center backdrop-blur-xl static px-4 py-2'>
+   <div className='flex   transition-all ease-in-out justify-between items-center  static px-4 py-2'>
     <Sidebar open={toggle} setOpen={setToggle}  />
     <div onClick={()=>setToggle((prev)=>!prev)} className='flex justify-start border-2 absolute ss:hidden cursor-pointer border-gray-700 rounded-full px-2 py-3'>
       <Image src={menu} className='bg-themeColor   ' />
@@ -33,7 +33,7 @@ const Navbar = () => {
   <p className='hover:text-blue-800'>{title}</p>
   {Icon && <Icon/> }
   {hoverItem && hoverItem===title && subMenu && (
-    <motion.div initial={{x:0,y:100,opacity:0}} animate={{x:0,y:0,opacity:1}} transition={{duration:1}} className='flex border-t-4 border-t-themeColor z-10 absolute top-7 space-x-5  rounded-lg polygon bg-white shadow-lg px-4 py-3'>
+    <motion.div initial={{x:0,y:100,opacity:0}} animate={{x:0,y:0,opacity:1}} transition={{duration:1}} className='flex border-t-4 backdrop-blur-lg drop-shadow-xl border-t-themeColor z-[1000] absolute top-7 space-x-5  rounded-lg polygon bg-white shadow-lg px-4 py-3'>
       {subMenu.map(({title,subLinks})=>(
         
         <>
