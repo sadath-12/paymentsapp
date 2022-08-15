@@ -4,9 +4,19 @@ import { Hero, Navbar, PayBy, Pricing, Services } from '../components'
 import HomeLayout from '../components/Layouts/HomeLayout'
 import PaymentBy from '../components/PayBy'
 import PaymentSection from '../components/PaymentSection'
-import styles from '../styles/Home.module.css'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
 
 export default function Home() {
+
+useEffect(()=>{
+  AOS.init()
+  AOS.refresh({
+    duration:500
+  })
+})
+
   return (
     <div className=' font-openSans mx-auto w-full'>
       <Head>

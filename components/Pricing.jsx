@@ -13,9 +13,11 @@ const Pricing = () => {
 </div>
 
 <div className='flex flex-wrap mt-10 gap-10   items-center  justify-center' >
-{[1,2,3].map(()=>(
+{[1,2,3].map((item,i)=>(
   <>
-  <motion.div initial={{scale:1}} whileHover={{scale:1.1}}  className='hover:scale-110 '>
+  <motion.div 
+ 
+  initial={{scale:1}} whileHover={{scale:1.1}}  className='hover:scale-110 '>
     <PricingCard/>
   </motion.div>
   </>

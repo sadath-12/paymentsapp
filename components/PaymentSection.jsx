@@ -5,9 +5,15 @@ import Button from './Buttons/Button'
 
 const PaymentSection = () => {
   return (
-    <div className=" px-16 lg:px-16 py-10">
+    <div
+   
+    className=" px-16 lg:px-16 py-10">
       <div className="container flex flex-col gap-5 items-center md:flex-row">
-        <div className="flex flex-col space-y-7 flex-1">
+        <div
+         data-aos="fade-right"
+         data-aos-delay="500"
+         data-aos-duration="1000"
+        className="flex flex-col space-y-7 flex-1">
           <div>
             <h1 className="text-themeColor heading">Payments Accepted By</h1>
             <div className="w-[100px] h-[2px] bg-blue-800" />
@@ -28,9 +34,13 @@ const PaymentSection = () => {
         </div>
 
         <div className="grid grid-cols-2 space-x-3 space-y-5 flex-1">
-          {payTakenBy.map(({ title,Icon }) => (
+          {payTakenBy.map(({ title,Icon },i) => (
             <>
-              <div className="rounded-md shadow-lg flex flex-col items-center py-3 justify-center">
+              <div
+               data-aos="zoom-in"
+               data-aos-delay={`${500 + i*100}`}
+               data-aos-duration="1000"
+              className="rounded-md shadow-lg flex flex-col items-center py-3 justify-center">
                 <Image
                   src={Icon}
                   width={300}

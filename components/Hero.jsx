@@ -24,9 +24,13 @@ const features =[
 
 const Hero = () => {
   return (
-    <div className='flex relative bg-[#FFF2F2] bg-opacity-30 container flex-col  justify-between lg:px-16 xl:px-0 z-[1] md:px-16 md:flex-row w-full py-10 gap-4  lg:items-center'>
+    <div className='flex relative bg-[#FFF2F2] bg-opacity-30 container flex-col   justify-between  z-[1] md:flex-row w-full py-10 gap-4  lg:items-center'>
 {/* lft  */}
-<div className='flex-1  flex flex-col  items-start space-y-7'>
+<div 
+ data-aos="fade-right"
+ data-aos-delay="500"
+ data-aos-duration="1000"
+className='flex-1  flex flex-col  items-start space-y-7'>
 
 <h1 className='text-themeColor backdrop-blur-sm drop-shadow-md font-poppins font-bold text-4xl gap-4 ss:text-6xl md:text-4xl leading-[50px]  lg:text-5xl ss:leading-[80px] lg:leading-[70px] xl:text-7xl'>Your One Stop <br className='lg:hidden' />Payments Solution </h1>
 <ul className='space-y-6 '>
@@ -48,7 +52,11 @@ const Hero = () => {
 </div>
 
 {/* right  */}
-<div className='flex-1 w-full relative h-full justify-end rounded-xl right-0'>
+<div
+ data-aos="fade-left"
+ data-aos-delay="500"
+ data-aos-duration="1000"
+className='flex-1 w-full relative h-full justify-end rounded-xl right-0'>
   <Image src={'/img/banner3.png'} width={600} height={600} objectFit='contain' />
 </div>
     </div>
