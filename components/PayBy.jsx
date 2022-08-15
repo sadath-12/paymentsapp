@@ -4,7 +4,8 @@ import { payTakenBy } from '../utils/dummy'
 
 const PayBy = () => {
   return (
-    <div className='flex flex-col px-16 lg:px-16 py-4'>
+    <div className='flex  flex-col px-16 lg:px-16 py-4'>
+<div className='container'>
 
 <div>
   <h1 className='text-themeColor heading'>Payments Accepted By</h1>
@@ -19,6 +20,7 @@ const PayBy = () => {
   </div>
     </>
   ))}
+</div>
 </div>
 
     </div>

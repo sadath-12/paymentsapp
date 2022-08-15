@@ -24,11 +24,11 @@ const features =[
 
 const Hero = () => {
   return (
-    <div className='flex mx-auto xl:max-w-[1280px] flex-col z-[1] md:px-16 md:flex-row w-full py-5 gap-4 lg:px-16  items-center'>
+    <div className='flex  container flex-col lg:px-16 xl:px-0 z-[1] md:px-16 md:flex-row w-full py-10 gap-4  items-center'>
 {/* lft  */}
 <div className='flex-1 flex flex-col  items-start space-y-7'>
 
-<h1 className='text-themeColor font-poppins font-bold text-4xl gap-4 ss:text-6xl md:text-4xl leading-[50px]  lg:text-5xl ss:leading-[80px] lg:leading-[70px]'>Your One Stop <br />Payments Solution </h1>
+<h1 className='text-themeColor font-poppins font-bold text-4xl gap-4 ss:text-6xl md:text-4xl leading-[50px]  lg:text-5xl ss:leading-[80px] lg:leading-[70px] xl:text-7xl'>Your One Stop <br className='lg:hidden' />Payments Solution </h1>
 <ul className='space-y-6 '>
   {features.map(({title,Icon})=>(
     <>

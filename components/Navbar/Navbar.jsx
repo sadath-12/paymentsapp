@@ -14,7 +14,9 @@ const Navbar = () => {
 
 
   return (
-   <div className='flex bg-white backdrop-blur-lg bg-opacity-20 drop-shadow-lg  fixed top-0 w-full z-10 xl:max-w-[1290px]  justify-between items-center  px-4 py-2'>
+   <div className='flex bg-white backdrop-blur-lg bg-opacity-20 drop-shadow-lg md:px-10 fixed top-0 w-full z-10   xl:px-20 py-2'>
+    <div className='container flex justify-between items-center '>
+
     <Sidebar open={toggle} setOpen={setToggle}  />
     <div onClick={()=>setToggle((prev)=>!prev)} className='flex justify-start border-2 absolute ss:hidden cursor-pointer border-gray-700 rounded-full px-2 py-3'>
       <Image src={menu} className='bg-themeColor   ' />
@@ -64,6 +66,7 @@ const Navbar = () => {
 <Button text={'Sign In'} />
 </div>
 
+</div>
 
 
    </div>

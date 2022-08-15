@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 
 const Pricing = () => {
   return (
-   <div className='w-full bg-opacity-50 bg-[#FFF2F2] px-16 lg:px-16 py-4 transition-all ease-in-out '>
+   <div className='w-full  bg-opacity-50 bg-[#FFF2F2] px-16 lg:px-16 py-4 transition-all ease-in-out '>
+<div className='container'>
 
 <div>
   <h1 className='text-themeColor heading' > Pricing</h1>
@@ -22,6 +23,8 @@ const Pricing = () => {
 </div>
 
    </div>
+</div>
+
   )
 }
 

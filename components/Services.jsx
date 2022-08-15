@@ -137,8 +137,8 @@ const Services = () => {
   
 
   return (
-    <div className="w-full  bg-opacity-50  py-4  bg-[#646FD4] ">
-      <div className=' w-full'>
+    <div className="w-full  px-16 bg-opacity-50  py-4  bg-[#646FD4] ">
+      <div className=' w-full container'>
 
       <div>
         <h2 className="text-black heading ">Services</h2>

@@ -12,4 +12,8 @@
     .heading{
         @apply font-bold font-poppins text-3xl ss:text-3xl
     }
+
+    .container {
+        @apply max-w-[80rem] !w-full mx-auto px-4 !important;
+    }
 }
